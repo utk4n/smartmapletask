@@ -1,0 +1,98 @@
+.container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-rows: 160px 180px;
+  padding-inline: 1rem;
+  gap: 0.5rem;
+  .current_weather {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.02);
+    }
+    &__title {
+      color: #8d9095;
+      margin-left: 1rem;
+    }
+
+    .current_weather__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: #56749f;
+      .current_weather__city_name {
+        font-size: 2rem;
+        margin-left: 2rem;
+        font-weight: 500;
+      }
+
+      .current_weather__type {
+        display: flex;
+        align-items: center;
+        .current_weather__icon {
+          border: 2px solid blue;
+        }
+      }
+
+      .current_weather__temp {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          font-size: 3rem;
+          height: max-content;
+          margin-bottom: auto;
+          margin-top: auto;
+        }
+      }
+    }
+  }
+
+  .extended_weather {
+    display: flex;
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.02);
+    }
+    &__title {
+      color: #8d9095;
+      margin-left: 1rem;
+    }
+    .extended_weather__daily_cards_container {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      padding-right: 0.5rem;
+      font-size: 14px;
+      color: #56749f;
+      .extended_weather__daily_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+
+        .extended_weather__daily_cards_date {
+          font-size: 13px;
+          font-weight: 500;
+        }
+        .extended_weather__daily_cards__status {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
