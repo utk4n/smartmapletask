@@ -1,3 +1,8 @@
+![image](https://github.com/utk4n/smartmapletask/blob/master/projectSS1.png)
+![image](https://github.com/utk4n/smartmapletask/blob/master/projectSS2.png)
+![image](https://github.com/utk4n/smartmapletask/blob/master/projectSSResponsive.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
